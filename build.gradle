@@ -7,7 +7,7 @@ plugins {
     id 'maven'
 }
 
-group = 'no.nils'
+group = 'jklecker'
 version = '0.13-TRAVELC.16'
 
 // stay compatible with the crowd
@@ -45,10 +45,18 @@ test {
 gradlePlugin {
     plugins {
         wsdl2java {
-            id = 'no.nils.wsdl2java'
-            implementationClass = 'no.nils.wsdl2java.Wsdl2JavaPlugin'
+            id = 'jklecker.wsdl2java'
+            implementationClass = 'jklecker.wsdl2java.Wsdl2JavaPlugin'
+            displayName = 'jklecker.wsdl2java'
+            description = 'Generate java code form wsdl/xsd with cxf'
         }
     }
+}
+
+pluginBundle {
+    website = 'https://github.com/jklecker/wsdl2java'
+    vcsUrl = 'https://github.com/jklecker/wsdl2java'
+    tags = ['wsdl2java']
 }
 
 publishing {

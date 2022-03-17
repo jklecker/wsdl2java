@@ -59,11 +59,11 @@ buildscript{
         mavenCentral()
     }
     dependencies {
-        classpath 'no.nils:wsdl2java:0.12'
+        classpath 'jklecker:wsdl2java:0.12'
     }
 }
 
-apply plugin: 'no.nils.wsdl2java'
+apply plugin: 'jklecker.wsdl2java'
 ```
 
 Kotlin:
@@ -71,7 +71,7 @@ Kotlin:
 ```kotlin
 plugins {
     id("java")
-    id("no.nils.wsdl2java") version "0.12"
+    id("jklecker.wsdl2java") version "0.12"
 }
 ```
 
@@ -135,7 +135,7 @@ Example setting of options:
 xsd2java {
     encoding = 'utf-8'
     xsdsToGenerate = [
-        ["src/main/resources/xsd/CustomersAndOrders.xsd", 'no.nils.xsd2java.sample', [header: false] /* optional map */]
+        ["src/main/resources/xsd/CustomersAndOrders.xsd", 'jklecker.xsd2java.sample', [header: false] /* optional map */]
     ]
     generatedXsdDir = file("generatedsources/xsd2java")
 }
@@ -151,12 +151,12 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'no.nils:wsdl2java:0.12'
+        classpath 'jklecker:wsdl2java:0.12'
     }
 }
 
 apply plugin: 'java'
-apply plugin: 'no.nils.wsdl2java'
+apply plugin: 'jklecker.wsdl2java'
 
 repositories {
     mavenCentral()

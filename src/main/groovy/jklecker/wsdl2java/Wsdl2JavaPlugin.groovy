@@ -1,4 +1,4 @@
-package no.nils.wsdl2java
+package jklecker.wsdl2java
 
 import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin

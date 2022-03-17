@@ -1,4 +1,4 @@
-package no.nils.wsdl2java
+package jklecker.wsdl2java
 
 import com.commentremover.app.CommentProcessor
 import com.commentremover.app.CommentRemover
