@@ -2,13 +2,14 @@ plugins {
     id "groovy"
     id "maven-publish"
     id "java-gradle-plugin"
+    id 'com.gradle.plugin-publish' version '0.14.0'
     id 'idea'
     id 'eclipse'
     id 'maven'
 }
 
 group = 'jklecker'
-version = '0.13-TRAVELC.16'
+version = '2.3.0'
 
 // stay compatible with the crowd
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -22,7 +23,6 @@ repositories {
 
 dependencies {
     implementation localGroovy()
-    implementation("com.github.ertugrulcetin:CommentRemover:1.2")
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.5.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-params:5.5.2'
